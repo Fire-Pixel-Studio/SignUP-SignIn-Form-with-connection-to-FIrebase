@@ -3,10 +3,17 @@
  import {getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-auth.js";
  import{getFirestore, setDoc, doc} from "https://www.gstatic.com/firebasejs/10.11.1/firebase-firestore.js"
  
- const firebaseConfig = {
- //YOUR COPIED FIREBASE PART SHOULD BE HERE
- //WATCH THIS VIDEO TO LEARN WHAT TO PUT HERE   https://youtu.be/_Xczf06n6x0
- };
+  const firebaseConfig = {
+    apiKey: "AIzaSyCTFbu4rcBjHMNwqASYKViBsJkdMgVfNXE",
+    authDomain: "feplix-login-data-server-0001.firebaseapp.com",
+    projectId: "feplix-login-data-server-0001",
+    storageBucket: "feplix-login-data-server-0001.firebasestorage.app",
+    messagingSenderId: "595743561091",
+    appId: "1:595743561091:web:725bc1b451f226a0bfd2b6"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
 
  // Initialize Firebase
  const app = initializeApp(firebaseConfig);
